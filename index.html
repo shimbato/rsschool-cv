@@ -45,8 +45,8 @@
                 function peak(arr) {
 
                 for (let i = 1; i &lt; arr.length - 1; i++) { let leftSum=arr.slice(0, i).reduce((accumulator,
-                    currentValue)=> accumulator + currentValue);
-                    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+                    currentValue)=&gt; accumulator + currentValue);
+                    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) =&gt; accumulator + currentValue);
                     if (leftSum === rightSum) {
                     return i;
                     }
